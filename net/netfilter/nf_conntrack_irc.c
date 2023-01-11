@@ -414,7 +414,7 @@ static int help(struct sk_buff *skb, unsigned int protoff,
 		if (memcmp(data, "\1DCC ", 5))
 			goto out;
 		data += 5;
-		/* we have at least (21+MINMATCHLEN)-(2+5) bytes valid data left */
+		        /* we have at least (21+MINMATCHLEN)-(2+5) bytes valid data left
 			 *bytes valid data left
 			 */
 			iph = ip_hdr(skb);
